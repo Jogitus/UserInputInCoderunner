@@ -6,29 +6,23 @@ public class UserInputKoe {
 
 		Scanner in = new Scanner(System.in);
 
-        String nimi = "";
-            System.out.println("What is your name?");
-                nimi = in.nextLine();
-        int ika = 0;
-            System.out.println("What is your age?");
-                ika = Integer.parseInt(in.nextLine());
-            System.out.println("Your name is " + nimi + " and you are " + ika + "years old.");
-        
+       int n1 = 0;
+       int n2 = 0;
+    
+        System.out.println("First number?");
+            n1 = Integer.parseInt(in.nextLine());
+        System.out.println("Second number?");
+            n2 = Integer.parseInt(in.nextLine());
+        int vastaus = n1 + n2;
+        System.out.println("The sum is " + vastaus + ".");
     }
 }
 
 
-
-// First ask the name of the user and then the age of the user. Then print:
-// Your name is Justin and you are 45 years old.
-// The output in the console should be precisely, if the user types "Justin" and "45":
-// What is your name?
-// Justin
-// How old are you?
-// 45
-// Your name is Justin and you are 45 years old.
-// Notice! When CodeRunner checks the code, it doesn't print the user input. It should be like above,
-    // but in Test Cases output looks like (if the input was Justin and 45):
-// What is your name?
-// How old are you?
-// Your name is Justin and you are 45 years old.
+// Ask the user to type two numbers. Then print the sum.
+// The output in the console should be precisely, if the user types "2" and "3":
+// First number?
+// 2
+// Second number?
+// 3
+// The sum is 5.
