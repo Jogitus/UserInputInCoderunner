@@ -14,15 +14,16 @@ public class UserInputKoe {
         System.out.println("Second number?");
             n2 = Integer.parseInt(in.nextLine());
         int vastaus = n1 + n2;
-        System.out.println("The sum is " + vastaus + ".");
+        System.out.println(n1 + " + " + n2 + " = " + vastaus);
     }
 }
 
 
-// Ask the user to type two numbers. Then print the sum.
-// The output in the console should be precisely, if the user types "2" and "3":
+// Ask the user to type two numbers. Sum the numbers and print the formula.
+// If the user types "2" and "3", the output should be precisely (Notice the spaces also):
+
 // First number?
 // 2
 // Second number?
 // 3
-// The sum is 5.
+// 2 + 3 = 5
